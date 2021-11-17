@@ -76,7 +76,7 @@
     <div id="container">
         <header>
             <div class="texto">
-                <h1>Sistemas Operativos</h1>
+                <h1>Firewall </h1>
             </div>
             <div class="wave">
                 <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
@@ -88,7 +88,7 @@
 
     <div id="información">
         <br>
-        <p>1. Mi primera modificacion</p>
+        <p>1. Entramos a la configuracion de red de <b>Ubuntu</b></p>
         <br>
         <img src="Firewall Ubuntu/1.png">
         <br>
@@ -96,7 +96,7 @@
 
     <div id="información">
         <br>
-        <p>2. Aquí ingresamos a la preferencia de red y nos cambiamos como en la imagen siguiente para conectarnos a internet :)  </p>
+        <p>2. Aquí ingresamos a la preferencia de red y nos cambiamos como en la imagen siguiente para conectarnos a internet :) </p>
         <br>
         <img src="Firewall Ubuntu/2.png">
         <br>
@@ -107,108 +107,109 @@
     <div id="información">
         <br>
         <br>
-        <p>3. Seleccionamos nuestro servidor y nos vamos a Roles de servidor </p>
+        <p>3. Después de conectarnos a nuestra red, vamos a instalar el <b>FireWall</b>desde la terminal de <b>Ubuntu</b> con el comando que se muestra en la imagen</p>
+        <p><b>apt-get install firewalld</b></p>
         <br>
-        <img src="Active/3.jpg">
+        <p>Nota: debemos estar en superUsuario para ejecutar el comando.</p>
         <br>
-    </div>
-
-    <div id="información">
-        <br>
-        <br>
-        <p>5. Nos arrojará a la siguiente ventana</p>
-        <br>
-        <img src="Active/4.jpg">
-        <br>
-    </div>
-    <div id="información">
-        <br>
-        <br>
-        <p>6. Verificamos lo que se instalará junto con el <b>Servicio de Active Directive </b></p>
-        <br>
-        <img src="Active/5.jpg">
+        <img src="Firewall Ubuntu/3.png">
         <br>
     </div>
 
     <div id="información">
         <br>
-        <p>7. Nos arrojará está ventana y daremos <b>clic en Agragar características</b> </p>
         <br>
-        <img src="Active/6.jpg">
+        <p>5. Ahora instalamos el <b>UFW</b> que es un manejador del <b>Firewall</b></p>
         <br>
+        <p>Para instalar ejecutamos el comando <b>apt-get install ufw</b></p>
         <br>
-        <br>
-    </div>
-    <div id="información">
-        <br>
-        <p>8. Ahora aparecerá en nuestra ventana seleccionado el servicio de dominio de Active Directory </p>
-        <br>
-        <p><b>Clic en siguiente</b> </p>
-        <br>
-        <img src="Active/7.jpg">
-        <br>
-        <br>
+        <img src="Firewall Ubuntu/4.png">
         <br>
     </div>
     <div id="información">
         <br>
-        <p>9. Verificamos que las características a instalar sean las del servicio </p>
         <br>
-        <p><b>Clic en siguiente</b> </p>
+        <p>6. Ejecutamos el siguiente comando para pedir permiso para poder conectarnos</b></p>
         <br>
-        <img src="Active/8.1.png">
+        <img src="Firewall Ubuntu/5_Permiso_Para_Conectarnos.png">
         <br>
+    </div>
+
+    <div id="información">
         <br>
+        <p>7. Activamos el Firewall con el comando que muestra la imagen</p>
+        <br>
+        <img src="Firewall Ubuntu/5.1.png">
+        <br>
+    </div>
+    <div id="información">
+        <br>
+        <p>8. El comando siguiente nos da permiso de conectarnos al <i>MYSQL</i> </p> 
+        <br>
+        <img src="Firewall Ubuntu/6_Permiso_MYSQL.png">
+        <br>
+    </div>
+
+    <div id="información">
+        <br>
+        <p>9. Con el comando <i><b>ufw allow 22/tcp</b></i> nos permite conectados al ssh</p>
+        <br>
+        <img src="Firewall Ubuntu/7_Permiso_SSH.png">
         <br>
     </div>
     <div id="información">
 
         <br>
-        <p>10. <b>Clic en siguiente</b> </p>
+        <p>10. En este paso damos de <u><b>alta los UDPS</b></u> </p>
         <br>
 
-        <img src="Active/9.1.png">
+        <img src="Firewall Ubuntu/8_Permisos_UDP.png">
+        <br>
+    </div>
+
+    <div id="información">
+        <br>
+        <p>11. El comando que se muestra en la imagen nos permite ver todos los comandos que tiene el servicio </p>
+        <p><b>ufw</b></p>
+        <br>
+        <img src="Firewall Ubuntu/9.png">
+        <br>
+        <br>
+    </div>
+
+    <div id="información">
+        <br>
+        <p>12. Ejecutamos <b>ufw status numbered</b> si en caso de no funcionar, es por que el <b>ufw esta inactivo</b></p>
+        <p> por lo que tenemos que activalor con el siguiente comando: <b><u><i>ufw enable</i></u></b></p>
+        <br>
+        <img src="Firewall Ubuntu/10.png">
+        <br>
+        <br>
+    </div>
+
+    <div id="información">
+        <br>
+        <p>13. con el <b>ufw activado</b> podemos ejecutar el <b>ufw status numbered</b> que nos permite visualizar que puertos</p>
+        <p>estan activados.</p> 
+        <br>
+        <img src="Firewall Ubuntu/11.png">
+        <p><i><b>ALLOW IN</b> nos indica que tiene permiso de entrada de cualquier sitio</i></p>
         <br>
         <br>
         <br>
     </div>
     <div id="información">
         <br>
-        <p>11. <b>Clic en siguiente</b> </p>
-        <br>
-        <img src="Active/9.2.png">
-        <br>
-        <br>
-        <br>
-    </div>
-    <div id="información">
-        <br>
-        <p>12. Verificamos que los servicios de que vamos a instalar es el correcto <b>Clic en instalar</b> </p>
-        <br>
-        <img src="Active/9.jpg">
+        <P>14. El comando <b>ufw firewalld status</b> nos proporciona la informacion o el estado que tiene el servicio<b> firewalld</b></P>
+        <img src="Firewall Ubuntu/12.png">
+        <p><i>como podemos observar nos dice que firewalld esta <b>active(running)</b></i></p>
+        <p><i>este <b>firewalld</b> nos protege de los ataques <u>(virus o hackers)</u>.</i></p>
         <br>
         <br>
         <br>
     </div>
-    <div id="información">
-        <br>
-        <p>13. Procedemos con la instalación </p>
-        <br>
-        <img src="Active/11.jpg">
-        <br>
-        <br>
-        <br>
-    </div>
-    <div id="información">
-        <br>
-        <p>14. Seleccionamos <b>Agregar un nuevo bosque, esto nos ayudará a tener nuestra página Web</b></p>
-        <br>
-        <p> <b>En este caso agregamos el nombre de dominio equipo5.com</b></p>
-        <img src="Active/12.jpg">
-        <br>
-        <br>
-        <br>
-    </div>
+
+    <!--
     <div id="información">
         <br>
         <p>15. <b>Agregamos una contraseña para el directorio DSRM</b></p>
@@ -416,15 +417,21 @@
         <br>
         <br>
     </div>
+-->
+
     <div id="información">
-        <a href="DHCP.html">
-            <H1><b>Ahora sigue el DHCP</b></H1>
+        <p>FIN DEL SERVICIO</p>
+        <br>
+        <br>
+        <a href="DOCKERYMYSQL.html">
+            <H1><b> Ahora sigue el servicio <u>DOCKER</u> </b></H1>
         </a>
         <br>
         <br>
         <br>
         <br>
     </div>
+
 </body>
 
 </html>
