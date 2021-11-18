@@ -76,7 +76,7 @@
     <div id="container">
         <header>
             <div class="texto">
-                <h1>Sistemas Operativos</h1>
+                <h1>Apache</h1>
             </div>
             <div class="wave">
                 <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
@@ -91,7 +91,8 @@
     <div id="información">
         <br>
         <br>
-        <p>1. Vamos a administración para agregar un nuevo rol</p>
+        <p><b>1.- </b>Para poder instalar Apache ejecutamos el comando <b><i>apt-get install apache2</i></b></p>
+        <p>como se muestra el imagen</p>
         <br>
         <img src="APACHE2 Ubuntu/1.png">
         <br>
@@ -100,15 +101,16 @@
     <div id="información">
         <br>
         <br>
-        <p>2. Aparece la siguiente ventana</p>
+        <p><b>2.- </b>Aqui se esta instalando el <b>Apache</b></p>
         <br>
         <img src="APACHE2 Ubuntu/2.png">
         <br>
     </div>
+
     <div id="información">
         <br>
         <br>
-        <p>3. Vamos a la seccion <b>Selección de servidor</b></p>
+        <p><b>3.- </b>Aqui fallo la instalación ya que no habiamos configurado la red de <b>Ubuntu</b></p>
         <br>
         <img src="APACHE2 Ubuntu/3.png">
         <br>
@@ -117,7 +119,7 @@
     <div id="información">
         <br>
         <br>
-        <p>4. Buscamos el <b>Servidor DHCP</b></p>
+        <p><b>4.- </b>vamos a configurar la red, llendonos a <i>preferencia de red</i></p>
         <br>
         <img src="APACHE2 Ubuntu/4.png">
         <br>
@@ -126,7 +128,7 @@
     <div id="información">
         <br>
         <br>
-        <p>5. Aparece la siguiente ventana y damos clic en <b>Agregar características</b></p>
+        <p><b>5.- </b>cambiamos el adaptador puente para poder tener internet</p>
         <br>
         <img src="APACHE2 Ubuntu/5.png">
         <br>
@@ -135,16 +137,7 @@
     <div id="información">
         <br>
         <br>
-        <p>6. <b>Servidor DHCP</b> ya aparece seleccionado</p>
-        <br>
-        <img src="APACHE2 Ubuntu/6.png">
-        <br>
-    </div>
-
-    <div id="información">
-        <br>
-        <br>
-        <p>7. Presionamos <b>Siguiente</b></p>
+        <p><b>6.- </b>ahora vamos a configuar <b>Ubuntu</b>, vamos a configurar la ip</p>
         <br>
         <img src="APACHE2 Ubuntu/7.png">
         <br>
@@ -153,7 +146,7 @@
     <div id="información">
         <br>
         <br>
-        <p>8. Presionamos <b>Siguiente</b></p>
+        <p>7. Presionamos <b>configuracion</b></p>
         <br>
         <img src="APACHE2 Ubuntu/8.png">
         <br>
@@ -162,7 +155,7 @@
     <div id="información">
         <br>
         <br>
-        <p>9. Verificamos que los servicios que estamos instalando y presionamos <b>Siguiente</b></p>
+        <p><b>8.- </b>ahora le ponemos el método automatico para que nos asigne una Ip automaticamente</p>
         <br>
         <img src="APACHE2 Ubuntu/9.png">
         <br>
@@ -171,7 +164,17 @@
     <div id="información">
         <br>
         <br>
-        <p>10. Esperamos a que se dé la instlación del nuevo rol</p>
+        <p><b>9.- </b>ahora ejecutamos el comando <b><i>apt-get install apache2</i></b>, esta vez no tendremos problema de instalación.</p>
+        <br>
+        <img src="APACHE2 Ubuntu/6.png">
+        <br>
+    </div>
+
+    <div id="información">
+        <br>
+        <br>
+        <p><b>10.- </b>Una vez instalada el <b>Apache</b>, debemos verificar que se cree el index.html, para ejecutamos el comando que </p>
+        <p>que se muestra en la imagen de abajo que es: <i><b>ls /var/www/html</b></i>.Ya que aqui vamos colocar nuestra pagina web.</p>
         <br>
         <img src="APACHE2 Ubuntu/10.png">
         <br>
@@ -180,7 +183,7 @@
     <div id="información">
         <br>
         <br>
-        <p>11. Presionamos <b>Siguiente</b></p>
+        <p><b>11.- </b>Ahora vamos a modificar el <i>index.html</i> que nos creo anteriormente.</p>
         <br>
         <img src="APACHE2 Ubuntu/11.png">
         <br>
@@ -189,7 +192,7 @@
     <div id="información">
         <br>
         <br>
-        <p>12. Presionamos en <b>completar configuración de DHCP</b></p>
+        <p><b>12.- </b>al ejecutar el comando anterior nos mostrara esta información, la cual es la página por Default del <b>Apache</b></p>
         <br>
         <img src="APACHE2 Ubuntu/12.png">
         <br>
@@ -198,7 +201,7 @@
     <div id="información">
         <br>
         <br>
-        <p>13. Corroboramos que el usuario coincida con el iniciado en el servidor o sea su <b>dominio que creamos</b></p>
+        <p><b>14.- </b>si ejecutamos el <i>localhost</i> en el navegador nos mostrara la página del <b>Apache</b></p>
         <br>
         <img src="APACHE2 Ubuntu/13.png">
         <br>
@@ -207,7 +210,8 @@
     <div id="información">
         <br>
         <br>
-        <p>14. Presionamos <b>Siguiente</b></p>
+        <p><b>14.- </b>para poder modificar el dominio, para que cuando ejecutemos al <i>localhost</i>, tenemos que ejecutar el comando que
+        aparece en la imagen de abajo. </p>
         <br>
         <img src="APACHE2 Ubuntu/14.png">
         <br>
@@ -216,7 +220,8 @@
     <div id="información">
         <br>
         <br>
-        <p>15. Regresando a nuestro <b>Administrador del servidor</b> debe aparecer lo siguiente en las banderas lo que indicara que se hizo de manera correcta</p>
+        <p><b>15.- </b>Cuando ejecutemos el comando anterior nos mostrara nuestro nombre de usuario que tenemos el virutal-box, por lo tanto </p>
+        <p>tenemos que eliminar ese texto, y lo <i>remplazaremos por nuesto dominio</i>, para que nuestro domino siempre este primero.</p>
         <br>
         <img src="APACHE2 Ubuntu/15.png">
         <br>
@@ -225,7 +230,7 @@
     <div id="información">
         <br>
         <br>
-        <p>16. Observamos que el <b>DHCP</b> está en línea</p>
+        <p><b>16.- </b>El siguiente paso es modificar el <b>etc/hosts</b></p>
         <br>
         <img src="APACHE2 Ubuntu/16.png">
         <br>
@@ -234,7 +239,11 @@
     <div id="información">
         <br>
         <br>
-        <p>17. Damos clic derecho y se desplegarán las opciones siguientes en la cual daremos <b>clic en Administrador DHCP</b></p>
+        <p><b>17.- </b>Al ejecutar el comando anterior nos aparecera 2 lineas de codigo, la cual es: <i>locahost con su ip, el nombre del virutal-box y su ip tambien</i> </p>
+        <p>lo que tenemos que hacer es cambiar el nombre del virutal-box que nos aparece <i>(hector-virtualbox)</i> por el nombre de nuestro dominio.</p>
+        <p>y Después anexarle 2 lineas más, la cual será: </p>
+        <p><u>1.- ip-dominio localhost</u></p>
+        <p><U>2.- ip-dominio dominio-web</u></p>
         <br>
         <img src="APACHE2 Ubuntu/17.png">
         <br>
@@ -243,7 +252,7 @@
     <div id="información">
         <br>
         <br>
-        <p>18. Aparece la siguiente ventana <b>damos clilc en WIN-8SS...</b></p>
+        <p><b>18.- </b>lineas anexadas:</p>
         <br>
         <img src="APACHE2 Ubuntu/18.png">
         <br>
@@ -252,7 +261,7 @@
     <div id="información">
         <br>
         <br>
-        <p>19. Ahora aparecen desplegados <b>IPv4</b> -> damos clic derecho y aparecen las siguientes opciones</p>
+        <p><b>19.- </b>El siguiente comando nos permite configurar el host.</p>
         <br>
         <img src="APACHE2 Ubuntu/19.png">
         <br>
@@ -261,8 +270,9 @@
     <div id="información">
         <br>
         <br>
-        <p>20. Ahora aparecen desplegados <b>IPv4</b> -> damos clic derecho y aparecen las siguientes opciones</p>
-        <br><p><b>Clic en Nuevo ambito</b></p>
+        <p><b>20.- </b>Lo que tenemos que hacer es es cambiar la ip, por nuestra ip del dominio-web, la cual va después de <i>bin address</i></p>
+        <br><p><b>y guardamos.</b></p>
+        <p>nota: si nos arroja un error solo borramos el <i>address y la ip.</i></p>
         <br>
         <img src="APACHE2 Ubuntu/20.png">
         <br>
@@ -271,7 +281,7 @@
     <div id="información">
         <br>
         <br>
-        <p>21. Nombramos al ambito nuevo <b>Repartidor-IP</b> ya que en definición es lo que hace un DHCP</p>
+        <p><b>21.- </b>El paso siguiente, es ejecutar el comando que aparece en la imagen, para poder configurar los registros de nuestra pagina web.</p>
         <br>
         <img src="APACHE2 Ubuntu/21.png">
         <br>
@@ -280,8 +290,8 @@
     <div id="información">
         <br>
         <br>
-        <p>22. Colocamos en <b>Dirección IP inicial</b> 192.168.10.20 desde esa IP empezará a repartir IP a los dispositivos que se conecten al servidor</p>
-        <br><p>En <b>Dirección IP final</b> 192.168.10.45 será el número máximo de dispositivos conectados es decir 45-20=25 dispositivos tendrán una IP</p>
+        <p><b>22.- </b>Una vez ejecutado el comando, vamos a modificar el <i><b>nameserver </b></i>colocando nuestro dominio</p>
+        <p>y el <i><b>server-address</b></i>lo cambiamos con nuestro ip del servidor, donde esta nuestra pagina web. La ultima opción lo dejemos tal cual.</p>
         <br>
         <img src="APACHE2 Ubuntu/22.png">
         <br>
@@ -358,13 +368,13 @@
         <img src="APACHE2 Ubuntu/30.png">
         <br>
     </div>
-
+<!---
     <div id="información">
         <br>
         <br>
         <p>31. Damos clilc en ámbito y debe aparecer el ámbito que creamos recientemente</p>
         <br>
-        <img src="dchp/32.png">
+        <img src="" alt="No hay nada">
         <br>
     </div>
     
@@ -398,9 +408,10 @@
         <img src="dchp/36.png">
         <br>
     </div>
+    -->
     <div id="información">
-        <a href="WebServer.html">
-            <H1><b>Ahora sigue el Web Server</b></H1>
+        <a href="Firewall_Ubuntu.html">
+            <H1><b>Ahora sigue el servicio <u>Firewall</u></b></H1>
         </a>
         <br>
         <br>
