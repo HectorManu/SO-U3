@@ -85,11 +85,9 @@
 
 <div id="información">
     <br>
-    <br><p>Debemos instalar MYSQL y eso lo haremos a través de una carpeta compartida</p>
-    ´<p>Siguiendo los siguientes pasos: </p>
     <br>
-    <p>1. Abrimos las configuraciones de la Máquina Virtual </p>
-    <br>
+    <p><b>1.-</b> Para poder instalar <b>Docker</b> necesitamos instalar algunos paquetes de requisitos previos que permitan</p>
+    <p>a <i>apt</i> usar paquetes através de HTTPS</p>
     <img src="DOKER Ubuntu/1.png">
     <br>
 </div>
@@ -97,7 +95,7 @@
 <div id="información">
     <br>
     <br>
-    <p>2. Vamos a la sección de <b>Carpetas compartidas</b> </p>
+    <p><b>2.- </b>El siguiente paso es el añadir la clave <b>GPG</b>, que nos permite instalar <b>Docker</b> y actualizar el Sistema.</p>
     <br>
     <img src="DOKER Ubuntu/2.png">
     <br>
@@ -106,8 +104,7 @@
 <div id="información">
     <br>
     <br>
-    <p>3. En nuestra maquina física, es decir, <b>Windows 10</b> hacemos una carpeta que vamos a compartir con la Máquina Virtual </p>
-
+    <p><b>3.- </b>Tenemos que instalar el repositorio de las fuentes para tener conexión con <b>Docker</b>.</p>
     <br>
     <img src="DOKER Ubuntu/3.png">
     <br>
@@ -116,7 +113,7 @@
 <div id="información">
     <br>
     <br>
-    <p>4. <b>Clic derecho</b> Vamos a propiedades de la carpeta y vamos a <b>uso compartido</b></p>
+    <p><b>4.- </b>Ahora hacemos un <i>apt-update</i> para que actualice las ligas.</p>
     <br>
     <img src="DOKER Ubuntu/4.png">
     <br>
@@ -125,7 +122,7 @@
 <div id="información">
     <br>
     <br>
-    <p>5. Colocamos en la barra de agregar <b>everyone</b> y lo seleccionamos y lo agregamos y le damos los permisos de la imagen de abajo</p>
+    <p><b>5.- </b>Vamos a crear un pequeño cache para guardar las politicas de <b>Docker</b>, eso se crea con el comando de la imagen:</p>
     <br>
     <img src="DOKER Ubuntu/5.png">
     <br>
@@ -134,7 +131,7 @@
 <div id="información">
     <br>
     <br>
-    <p>6. vemos la carpeta que vamos a compartir y la ventana para agregar de virtual box</p>
+    <p><b>6.- </b>Ahora es momento de instalar <b>Docker</b> con el comando de abajo:</p>
 
     <br>
     <img src="DOKER Ubuntu/6.png">
@@ -144,7 +141,8 @@
 <div id="información">
     <br>
     <br>
-    <p>7. Precionamos en otro y ponemos la ruta de la carpeta</p>
+    <p><b>7.- </b>Para poder ver si <b>Docker</b> esta en funcionamiento ejecutamos el comando <i><u>sudo systemctl status docker</u></i>, si esta corriente</p>
+    <p>o esta en ejecucion nos debe aparecer Active: <i>active (running)</i></p>
     <br>
     <img src="DOKER Ubuntu/7.png">
     <br>
@@ -153,7 +151,7 @@
 <div id="información">
     <br>
     <br>
-    <p>8. Aparece la dirección de la carpeta en la siguiente ventana al darle agregar</p>
+    <p><b>8.- </b>para verificar si <b>Docker</b> puede acceder a imagenes y descargarlas de <b>Docker Hub</b>, escribimos lo siguiente: </p>
     <br>
     <img src="DOKER Ubuntu/8.png">
     <br>
@@ -164,15 +162,15 @@
     <br>
     <p>9. Clic en Dispositivos->Inseertar imagen de CD de la << Guest additions >>... </p>
     <br>
-    <img src="" alt="Aqui tiene que ir la imagen numero 9 del DOCKER">
+    <img src="DOKER Ubuntu/9">
     <br>
 </div>
 
 <div id="información">
     <br>
     <br>
-    <p>10. Vamos a nuestro explorador de archivos de la Máquina Virtual y sleccionamos Unidad CD como en la imágen de abajo</p>
-
+    <p><b>9.- </b>Al ejecutar el comando anterior dicho, nos manda el mensaje <i>hello from docker!!</i>, la cual quiere decir que si esta en funcionamiento.</p>
+    <p>ha este <i>run hello-world</i> se le conoce como la primera imagen de <u>docker</u>.</p>
     <br>
     <img src="DOKER Ubuntu/10.png">
     <br>
@@ -181,7 +179,8 @@
 <div id="información">
     <br>
     <br>
-    <p>11. Ejecutamos <b>VBoxWindowsAdditions-amd64</b></p>
+    <p>-------- instalar el servicio MySql desde Docker --------</p>
+    <p><b>11.- </b>Para instalar o jalar el <i>Mysql</i>, ejecutamos el comando <u><i>docker pull mysql.</i></u></p>
     <br>
     <img src="DOKER Ubuntu/11.png">
     <br>
@@ -190,9 +189,9 @@
 <div id="información">
     <br>
     <br>
-    <p>12. Aparecerá la siguiente ventana </p>
+    <p><b>12.- </b>Para saber cuales son mis imagenes ejecutamos <i>docker images </i> donde aparecerá los repositorios y sus IDs, y aqui podemos ver que el </p>
+    <p>repositorio <i>hello-word</i>, que a pesar de ser solo un mensaje, funge como una imagen para docker.</p>
     <br>
-    <p><b>Clic en Next></b></p>
     <br>
     <img src="DOKER Ubuntu/12.png">
     <br>
