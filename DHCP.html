@@ -76,7 +76,7 @@
     <div id="container">
         <header>
             <div class="texto">
-                <h1>Sistemas Operativos</h1>
+                <h1>DHCP</h1>
             </div>
             <div class="wave">
                 <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
@@ -88,25 +88,235 @@
 
         </header>
     </div>
+
     <div id="información">
         <br>
         <br>
-        <p>1. Vamos a administración para agregar un nuevo rol</p>
+        <p><b>1.-</b> Para poder obtener o poder instalar el <u>DCHP en Ubuntu</u> necesitamos estar en modo <i>SuperUsuario(root)</i> y el root tiene que tener</p>
+        <p>una contraseña, en este caso nosotros no le hemos puesto la contraseña a nuestro <i><u>root</u></i>, por lo que podemos ver en la imagen nos muestra</p>
+        <p>que <i>Fallo la autenticacion</i>. Para poder ponerle la contraseña a nuestro SuperUsuario tenemos que hacer la instrucción del segundo paso.</p>
         <br>
-        <img src="dchp/1.png">
+        <img src="DHCP Ubuntu/1.png">
         <br>
     </div>
-   
+
     <div id="información">
-        <a href="WebServer.html">
-            <H1><b>Ahora sigue el Web Server</b></H1>
+        <br>
+        <br>
+        <p><b>2.- </b>Para poder colocarle la contraseña a nuestro SuperUsuario tenemeos que ejecutar el comando que aparece en la imagen: </p>
+        <br>
+        <img src="DHCP Ubuntu/2.png">
+        <p>ya puesto nuestra contraseña para nuestro SuperUsuario entonces ya podemos cambiarnos a SuperUsuario en nuestro perfil.</p>
+        <br>
+    </div>
+
+    <div id="información">
+        <br>
+        <br>
+        <p><b>3.- </b>Entonces colocamos el comando que hicicmos en el paso 1, pero ahora colocando la contraseña que le pusimos a nuestro SuperUsuario. </p>
+        <p>Después nos cambiamos de directorio (opcional), en donde vamos a trabajar, en la siguiente imagen se muestra el cambio de directorio.</p>
+        <br>
+        <img src="DHCP Ubuntu/3.png">
+        <br>
+    </div>
+
+    <div id="información">
+        <br>
+        <br>
+        <p><b>4.- </b>Como es la primera vez que se instalara el <i>DCHP</i> primero tenemos que actualizar el <b>Ubuntu</b> con el comando <u>apt-get updete</u>.</p>
+        <p><b>en este caso fallo la actualizacion de Ubuntu</b> ya que nuestra maquina no tenia acceso a internet por lo que tenemos que configurar <i>Ubuntu</i> </p>
+        <p>para que reciba señal de internet.</p>
+        <br>
+        <img src="DHCP Ubuntu/4.png">
+        <br>
+    </div>
+
+    <div id="información">
+        <br>
+        <br>
+        <p><b>5.- </b>En este paso se realizo la configuracion de Ubuntu para que reciba internet: </p>
+        <br>
+        <img src="DHCP Ubuntu/6.png">
+        <br>
+        <p><b>5.1</b></p>
+        <br>
+        <img src="DHCP Ubuntu/7.png">
+        <br>
+        <p><b>5.2</b></p>
+        <br>
+        <img src="DHCP Ubuntu/8.png">
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <div id="información">
+        <br>
+        <br>
+        <p><b>6.- </b>Ya configurado y actualizado Ubuntu, ahora ya podemos instalar el <b><i>DHCP-server</i></b>, con el comando que nos muestra la imagen: </p>
+        <br>
+        <img src="DHCP Ubuntu/9.png">
+        <br>
+        <br>
+    </div>
+
+    <div id="información">
+        <br>
+        <br>
+        <p><b>7.- </b>Al terminar la instalación del <i>DHCP-server</i>, ahora tenemos que ejecutar el comando <i>ls /etc/dhcp</i>, para que nos muestre los archivos que están</p>
+        <p>en el directorio actual, y tenemos que encontrar el archvio <b><u><i>dchpd.conf</i></u></b>, ya que tenemos que configurar ese archivo. </p>
+        <br>
+        <img src="DHCP Ubuntu/10.png">
+        <br>
+        <br>
+    </div>
+
+    <div id="información">
+        <br>
+        <br>
+        <p><b>8.- </b>Ahora vamos a configurar el archivo antes mencionado en el paso anterior: </p>
+        <br>
+        <img src="DHCP Ubuntu/11.png">
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <div id="información">
+        <br>
+        <br>
+        <p><b>9.- </b>Al abrir el archvio con <i>nano</i>, nos mostrará la siguiente información.</p>
+        <br>
+        <img src="DHCP Ubuntu/12.png">
+        <br>
+        <br>
+    </div>
+
+    <div id="información">
+        <br>
+        <br>
+        <p><b>10.- </b>Lo que tenemos que hacer es desactivar algunas lineas colocando al principio un simbolo numeral(#) y para activarlo solo quitamos ese simbolo. </p>
+        <p>Desactivamos la fila 9 a la 12 y dejamos activo <i>ddns-uptade-style none; </i></p>
+        <br>
+        <img src="DHCP Ubuntu/13.png">
+        <br>
+        <br>
+    </div>
+
+    <div id="información">
+        <br>
+        <br>
+        <p><b>10.1.-</b> Más abajo hay más configuraciones, tenemos que activar las lineas de aparecen en la imagen y estas serián las ultimas lineas que se activarán.</p>
+        <p>En la linea que dice <i>option domain-name </i> tiene que tener nuestro domoinio web.</p>
+        <p>En la linea <i>subnet</i>, tenemoq que asignarle una <u>ip fija</u> que nosotros colocaremos, en la <i>mask</i> ponemos la ip mask que simpre hemos utilizado.</p>
+        <p>En la linea <i>range</i> colocamos el rango que tendra para repartir y en el <i>brodcast-address</i> ponemos lo mismo agregando un 5 que seria el final de las ips que repartira.</p>
+        <br>
+        <img src="DHCP Ubuntu/14.png">
+        <br>
+        <br>
+    </div>
+
+    <div id="información">
+        <br>
+        <br>
+        <p><b>11.- </b>Guardamos los cambios que le hicimos.</p>
+        <br>
+        <img src="DHCP Ubuntu/15.png">
+        <br>
+        <br>
+    </div>
+
+    <div id="información">
+        <br>
+        <br>
+        <p><b>12.- </b>Ahora vamos a activar el <B>DCHP</B> con el comando que aparece: </p>
+        <br>
+        <img src="DHCP Ubuntu/16.png">
+        <br>
+    </div>
+
+    <div id="información">
+        <br>
+        <br>
+        <p><b>13.- </b>Para saber si el <b>DHCP-server</b> esta funcionando de manera correcta, solo cambiamos el <u>start</u> por <u>tatus</u>.</p>
+        <br>
+        <img src="DHCP Ubuntu/17.png">
+        <br>
+        <br>
+    </div>
+
+    <div id="información">
+        <br>
+        <br>
+        <p><b>14.- </b>Cuando se hizo el anterior paso nos arrojo un error de <b>Active: failed</b>, en caso de que si funcionará nos debe arrojar en <b>Active : active(running)</b></p>
+        <p>Fallo por que en el Ubuntu no le hemos asignado una ip-fija, por lo que tenemos que configurar Ubuntu para asignarle una ip-fija.</p>
+        <br>
+        <img src="DHCP Ubuntu/18.png">
+        <br>
+        <br>
+    </div>
+
+    <div id="información">
+        <br>
+        <br>
+        <p><b>15.- </b>Configurar Ubuntu:</p>
+        <br>
+        <img src="DHCP Ubuntu/19.png">
+        <br>
+        <p>15.1</p>
+        <br>
+        <img src="DHCP Ubuntu/20.png">
+        <br>
+        <p>15.2</p>
+        <img src="DHCP Ubuntu/21.png">
+        <br>
+        <p>15.3</p>
+        <br>
+        <img src="DHCP Ubuntu/23.png">
+        <br>    
+        <br>
+    </div>
+
+    <div id="información">
+        <br>
+        <br>
+        <p><b>16.- </b>Reiniciamos el <b>DHCP-server</b>, para que actulize los cambios hechos.</p>
+        <br>
+        <img src="DHCP Ubuntu/25.png">
+        <br>
+        <br>
+    </div>
+
+    <div id="información">
+        <br>
+        <br>
+        <p><b>17.- </b>Luego checamos nuevamente el estado, y como podemos observar el <b>DHCP-server</b> esta corriendo sin problemas: </p>
+        <br>
+        <img src="DHCP Ubuntu/22.png">
+        <br>
+        <br>
+    </div>
+
+    <div id="información">
+        <br>
+        <br>
+        <p><b>18.- </b>Probamos con en la terminal de windos y vemos que el <b>DHCP-server</b>, esta funcionando perfectamente.</p>
+        <br>
+        <img src="DHCP Ubuntu/26.png">
+        <br>
+    </div>
+
+    <div id="información">
+        <br>
+        <br>
+        <a href="APACHE.html">
+            <H1><b>Ahora sigue el servicio <u>APACHE</u></b></H1>
         </a>
         <br>
         <br>
         <br>
         <br>
     </div>
-    
 
 </body>
 
