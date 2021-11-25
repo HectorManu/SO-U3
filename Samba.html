@@ -85,300 +85,352 @@
     <div id="información">
         <br>
         <br>
-        <p>1. Vamos a administrar y damos clilc en agregar roles y características </p>
+        <p>1. Como primer paso iniciamos la terminal de ubuntu para instalar Samba con "apt-get install Samba" </p>
         <br>
-        <img src="WebServer/1.png">
-        <br>
-    </div>
-    <div id="información">
-        <br>
-        <br>
-        <p>2. Seleccionamos el servidor </p>
-        <br>
-        <img src="WebServer/2.png">
+        <img src="Samba/1.png">
         <br>
     </div>
     <div id="información">
         <br>
         <br>
-        <p>3. Buscamos el <b>Servidor web (IIS) </b> </p>
+        <p>2. Iniciamos el samba con este comando </p>
         <br>
-        <img src="WebServer/3.png">
+        <img src="Samba/2.png">
+        <br>
+    </div>
+    <div id="información">
+        <br>
+        <br>
+        <p>3. Verificamos que el smbd este activo y sin letras rojas </b> </p>
+        <br>
+        <img src="Samba/3.png">
         <br>
     </div>
     
     <div id="información">
         <br>
         <br>
-        <p>4. Aparece la siguiente ventana para confirmar si es el servicio que deseamos</p>
-        <br><p><b>Damos clic en Agregar características</b></p>
+        <p>4. Luego verificas que el nmbd este activo y sin letras rojas</p>
+        <br><p><b>Se necesitan estar los dos activos el smbd y el nmbd</b></p>
         <br>
-        <img src="WebServer/4.png">
-        <br>
-    </div>
-    <div id="información">
-        <br>
-        <br>
-        <p>5.<b>Servidor web (IIS)</b> ya aparece seleccionado</p>
-        <br>
-        <img src="WebServer/5.png">
+        <img src="Samba/4.png">
         <br>
     </div>
     <div id="información">
         <br>
         <br>
-        <p>6. Presionamos <b>Siguiente</b> corroborando en Características que se instalan las adecuadas para el Web Server</p>
+        <p>5.Verificamos la ruta del samba que este el archivo smb.conf</p>
+        <br>
+        <img src="Samba/5.png">
+        <br>
+    </div>
+    <div id="información">
+        <br>
+        <br>
+        <p>6. Escribiremos el comando nano junto la ruta del archivo visto anteriormente</p>
 
         <br>
-        <img src="WebServer/6.png">
+        <img src="Samba/6.png">
         <br>
     </div>
     <div id="información">
         <br>
         <br>
-        <p>7. Presionamos <b>Siguiente</b></p>
+        <p>7. Nos aparecera el editor de texto nano e iremos bajando abajo></p>
         <br>
-        <img src="WebServer/7.png">
-        <br>
-    </div>
-    <div id="información">
-        <br>
-        <br>
-        <p>8. Verificamos que los servicios de roles sean los siguientes y da clic en <b>Siguiente</b></p>
-        <br>
-        <img src="WebServer/8.png">
+        <img src="Samba/7.png">
         <br>
     </div>
     <div id="información">
         <br>
         <br>
-        <p>9. Comprobamos que se instalan los protocolos y el servidor web como en la siguiente imagen y procedemos a instalar</p>
+        <p>8. Verificamos que los Workgroup sean iguales del ubuntu y windows</p>
         <br>
-        <img src="WebServer/9.png">
-        <br>
-    </div>
-    <div id="información">
-        <br>
-        <br>
-        <p>10. Esperamos a que se dé la instlación del nuevo rol</p>
-        <br>
-        <img src="WebServer/10.png">
+        <img src="Samba/8.png">
         <br>
     </div>
     <div id="información">
         <br>
         <br>
-        <p>11. Presionamos <b>Cerrar</b></p>
+        <p>9. Bajando hasta el apartado Share definition e ingresaremos estos datos con el nombre de la ruta</p>
         <br>
-        <img src="WebServer/11.png">
-        <br>
-    </div>
-    <div id="información">
-        <br>
-        <br>
-        <p>12. Ahora en la ventana de administración del servidor aparece IIS y le <b>damos clic derecho</b> </p>
-        <br>
-        <br><p><b>Damos clilc en Administrador de internet information Service IIS</b></p>
-        <br>
-        <img src="WebServer/12.png">
+        <img src="Samba/9.png">
         <br>
     </div>
     <div id="información">
         <br>
         <br>
-        <p>13. Abre la siguiente ventana</p>
+        <p>10. Añademos nuevos usuarios que queramos ingresar</p>
         <br>
-        <img src="WebServer/13.png">
-        <br>
-    </div>
-    <div id="información">
-        <br>
-        <br>
-        <p>14. Desplega la siguiente ventana</p>
-        <br>
-        <img src="WebServer/14.png">
+        <img src="Samba/10.png">
         <br>
     </div>
     <div id="información">
         <br>
         <br>
-        <p>15. Seleccionamos no mostrar este mensaje y ponemos No</p>
+        <p>11. Verificamos los usuarios que ya tenemos en el directorio home</p>
         <br>
-        <img src="WebServer/15.png">
-        <br>
-    </div>
-    <div id="información">
-        <br>
-        <br>
-        <p>16. Damos clilc hasta desplegar <b>Default Web Site</b></p>
-        <br>
-        <img src="WebServer/16.png">
+        <img src="Samba/11.png">
         <br>
     </div>
     <div id="información">
         <br>
         <br>
-        <p>17. Damos clic derecho sobre <b>Default Web Site</b> damos clic en <b>Explorar</b></p>
-        <br>
-        <img src="WebServer/17.png">
-        <br>
-    </div>
-    <div id="información">
+        <p>12. Le asignamos una contraseña al usuario</p>
         <br>
         <br>
-        <p>18. Observamos que nos lleva a <b>wwwroot</b> es el sitio que tiene por defecto</p>
-        <br>
-        <img src="WebServer/18.png">
+        <img src="Samba/12.png">
         <br>
     </div>
     <div id="información">
         <br>
         <br>
-        <p>19. Renombramos <b>iisstart</b> por <b>Index</b></p>
+        <p>13. Nos cambiamos a la ruta de Samba</p>
         <br>
-        <img src="WebServer/19.png">
-        <br>
-    </div>
-    <div id="información">
-        <br>
-        <br>
-        <p>20. Lo abrimos con nuestro navegador en <b>Windows server</b> y aparece lo siguiente</p>
-        <br>
-        <img src="WebServer/20.png">
+        <img src="Samba/13.png">
         <br>
     </div>
     <div id="información">
         <br>
         <br>
-        <p>21. Ahora vamos al disco local</p>
+        <p>14. Creamos el directorio con el nombre que le asignamos en el archivo anteriormente modificado</p>
+        <p>Luego verificamos que se haya creado</p>
         <br>
-        <img src="WebServer/21.png">
-        <br>
-    </div>
-    <div id="información">
-        <br>
-        <br>
-        <p>22. Vamos a <b>Windows</b></p>
-        <br>
-        <img src="WebServer/22.png">
+        <img src="Samba/14.png">
         <br>
     </div>
     <div id="información">
         <br>
         <br>
-        <p>23. Ahora a <b>System32</b> </p>
+        <p>15. Le asignamos permisos a la carpeta</p>
         <br>
-        <img src="WebServer/23.png">
-        <br>
-    </div>
-    <div id="información">
-        <br>
-        <br>
-        <p>24. Vamos a drivers</p>
-        <br>
-        <img src="WebServer/24.png">
+        <img src="Samba/15.png">
         <br>
     </div>
     <div id="información">
         <br>
         <br>
-        <p>25. Por último a <b>etc</b></p>
+        <p>16. Le cambiamos los permisos de directorio y archivos</b></p>
         <br>
-        <img src="WebServer/25.png">
-        <br>
-    </div>
-    <div id="información">
-        <br>
-        <br>
-        <p>26. Abrimos host con el bloc de notas</p>
-        <br>
-        <img src="WebServer/26.png">
+        <img src="Samba/16.png">
         <br>
     </div>
     <div id="información">
         <br>
         <br>
-        <p>28. Vemos lo que dice el archivo y nos enfocamos en las últimas líneas</p>
+        <p>17. Le cambiamos el grupo del directorio</p>
         <br>
-        <img src="WebServer/27.png">
-        <br>
-    </div>
-    <div id="información">
-        <br>
-        <br>
-        <p>29. Agregamos los host siguientes que puede abrir mediante el navegador</p>
-        <br>
-        <img src="WebServer/28.png">
+        <img src="Samba/17.png">
         <br>
     </div>
     <div id="información">
         <br>
         <br>
-        <p>30. Aparece en la siguiente </p>
+        <p>18. En la configuracion de red de la maquina virtual verificamos que el adaptador</p>
+        <p>este en Family controller</p>
         <br>
-        <br><p><b>Clic en guardar</b></p>
-        <br>
-        <img src="WebServer/29.png">
-        <br>
-    </div>
-    <div id="información">
-        <br>
-        <br>
-        <p>31. Vamos al navegador y aparece el dominio <b>Equipo5.com</b></p>
-        <br>
-        <img src="WebServer/30.png">
+        <img src="Samba/18.png">
         <br>
     </div>
     <div id="información">
         <br>
         <br>
-        <p>32. Damos clilc en ámbito y debe aparecer el ámbito que creamos recientemente</p>
+        <p>19. Dentro de Ubuntu en la configuracion de red le asignamos una IP fija ></p>
         <br>
-        <img src="WebServer/31.png">
+        <img src="Samba/19.png">
         <br>
     </div>
     <div id="información">
         <br>
         <br>
-        <p>33. Colocamos también la ip de host que pusimos en el archivo host que es la ip del windows server</p>
+        <p>20. Reiniciamos el smbd y el nmbd para luego verificar que esten funcionando</p>
+        <br>
+        <img src="Samba/20.png">
+        <br>
+    </div>
+    <div id="información">
+        <br>
+        <br>
+        <p>21. Verificamos que el DHCP este activo, pero en este caso hay un problemas que solucionaremos</p>
+        <p>en los siguientes pasos</p>
+        <br>
+        <img src="Samba/21.png">
+        <br>
+    </div>
+    <div id="información">
+        <br>
+        <br>
+        <p>22. Apagamos y prendemos la red</p>
+        <br>
+        <img src="Samba/22.png">
+        <br>
+    </div>
+    <div id="información">
+        <br>
+        <br>
+        <p>23. Reiniciamos los adaptadores de red</p>
+        <br>
+        <img src="Samba/23.png">
+        <br>
+    </div>
+    <div id="información">
+        <br>
+        <br>
+        <p>24. Verificamos el estado y ahora si esta funcionando correctamente</p>
+        <br>
+        <img src="Samba/24.png">
+        <br>
+    </div>
+    <div id="información">
+        <br>
+        <br>
+        <p>25. En Windows Reiniciamos las IP y verificamos que tengamos una IP asignada por el DHCP</p>
+        <br>
+        <img src="Samba/25.png">
+        <br>
+    </div>
+    <div id="información">
+        <br>
+        <br>
+        <p>26. Verificamos que este la carpeta compartida en el directorio de Samba</p>
+        <br>
+        <img src="Samba/26.png">
+        <br>
+    </div>
+    <div id="información">
+        <br>
+        <br>
+        <p>27. Verificamos que id de grupos hay en el dirrectorio con "cat /etc/group"</p>
+        <p>para asignarle uno a los usuarios</p>
+        <br>
+        <img src="Samba/28.png">
+        <br>
+    </div>
+    <div id="información">
+        <br>
+        <br>
+        <p>29. Procedemos a agregar los usuarios en el grupo de Samba </p>
+        <br>
+        <img src="Samba/29.png">
+        <br>
+    </div>
+    <div id="información">
+        <br>
+        <br>
+        <p>30. Verificamos que los usuarios esten agregados </p>
+
+        <br>
+        <img src="Samba/31.png">
+        <br>
+    </div>
+    <div id="información">
+        <br>
+        <br>
+        <p>31. creamos el directorio sambashare></p>
+        <br>
+        <img src="Samba/32.png">
+        <br>
+    </div>
+    <div id="información">
+        <br>
+        <br>
+        <p>32. Verificamos que se alla creado el directorio</p>
+        <br>
+        <img src="Samba/33.png">
+        <br>
+    </div>
+    <div id="información">
+        <br>
+        <br>
+        <p>33. le cambiamos los permisos para luego cambiarle la ubicacion</p>
         <br>
         <br>
         <br>
-        <img src="WebServer/32.png">
+        <img src="Samba/34.png">
         <br>
     </div>
     
     <div id="información">
         <br>
         <br>
-        <p>34. Y se sigue viendo la pagina web index</p>
+        <p>34. Le cambiamos los atributos</p>
         <br>
        
         <br>
-        <img src="WebServer/33.png">
+        <img src="Samba/35.png">
         <br>
     </div>
     <div id="información">
         <br>
         <br>
-        <p>35. Vamos a Windows 10 (nuestra maquina física) y colocamos la ip de la máquina virtual y aparece la pagina del servidor, <b>Sí hay conexión</b></p>
+        <p>35. Le asignamos una contraseña</p>
         <br>
-        <img src="WebServer/34.png">
+        <img src="Samba/36.png">
         <br>
     </div>
     
     <div id="información">
         <br>
         <br>
-        <a href="BaseDatos.html">
-            <H1><b>Ahora sigue el Base de datos</b></H1>
-        </a>
+        <p>35. Agregados los puertos UDP y TCP al Firewall</p>
         <br>
-        <br>
-        <br>
+        <img src="Samba/37.png">
         <br>
     </div>
 
+    <div id="información">
+        <br>
+        <br>
+        <p>35. Agregamos a samba a los parametros del Firewall</p>
+        <br>
+        <img src="Samba/38.png">
+        <br>
+    </div>
+
+    <div id="información">
+        <br>
+        <br>
+        <p>35. Asemos los cambios permanentes que hicimos en el Firewall</p>
+        <br>
+        <img src="Samba/39.png">
+        <br>
+    </div>
+
+    <div id="información">
+        <br>
+        <br>
+        <p>35. Verificamos que esten todos los puertos en el Firewall</p>
+        <br>
+        <img src="Samba/40.png">
+        <br>
+    </div>
+
+    <div id="información">
+        <br>
+        <br>
+        <p>35. En el administrador de archivos de windows le hacemos click derecho a red</p>
+        <p>y le damos a conectar una unidad de red</p>
+        <br>
+        <img src="Samba/41.png">
+        <br>
+    </div>
+
+    <div id="información">
+        <br>
+        <br>
+        <p>35. Le ponemos nuestra IP del servidor con su directorio</p>
+        <br>
+        <img src="Samba/42.png">
+        <br>
+    </div>
+
+    <div id="información">
+        <br>
+        <br>
+        <p>Luego nos pedira un usuario y contraseña que le asignamos anteriormente para entrar</p>
+        <p>Y ya podremos compartir archivos libremente</p>
+
+    </div>
 
 
     </body>
